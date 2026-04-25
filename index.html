@@ -19,12 +19,10 @@
 body{font-family:'Nunito',sans-serif;background:var(--bg);overflow-x:hidden;scroll-behavior:smooth}
 button{cursor:pointer;font-family:inherit;background:none}
 svg{display:block}
-
 /* ── PROGRESS BAR ─────────────────── */
 #progress-bar{position:fixed;top:0;left:0;height:4px;width:0;
   background:linear-gradient(90deg,#a855f7,#ec4899,#f59e0b);
   z-index:9999;transition:width .1s linear;border-radius:0 4px 4px 0}
-
 /* ── HERO ─────────────────────────── */
 #hero{
   min-height:100svh;display:flex;flex-direction:column;
@@ -89,10 +87,8 @@ svg{display:block}
   border-bottom:3px solid rgba(255,255,255,.4);transform:rotate(45deg);
   animation:arrowBounce 1.4s ease-in-out infinite}
 @keyframes arrowBounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(6px)}}
-
 /* ── APP SHELL ────────────────────── */
 #app{min-height:100svh}
-
 #app-nav{
   position:sticky;top:0;z-index:200;
   background:rgba(255,255,255,.96);backdrop-filter:blur(12px);
@@ -119,11 +115,9 @@ svg{display:block}
   transition:all .2s;
 }
 #btn-fullscreen:hover{background:#e8e0ff}
-
 /* ── TAB CONTENT ──────────────────── */
 .tab-panel{display:none;padding:12px;min-height:calc(100svh - var(--nav-h))}
 .tab-panel.active{display:block}
-
 /* ── SENTENCE BAR ─────────────────── */
 .sentence-bar{
   background:#fff;border-radius:20px;
@@ -157,7 +151,6 @@ svg{display:block}
 .btn-say:not(:disabled):hover{transform:scale(1.05)}
 .btn-say.speaking{animation:speakPulse .6s ease-in-out infinite alternate}
 @keyframes speakPulse{to{box-shadow:0 6px 24px rgba(16,185,129,.7);transform:scale(1.06)}}
-
 /* ── CATEGORY PILLS ───────────────── */
 .cat-scroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:10px;scrollbar-width:none}
 .cat-scroll::-webkit-scrollbar{display:none}
@@ -166,7 +159,6 @@ svg{display:block}
   padding:9px 16px;font-size:.88rem;font-weight:900;
   transition:all .2s;flex-shrink:0;
 }
-
 /* ── PICTO GRID ───────────────────── */
 .picto-grid{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
@@ -180,7 +172,6 @@ svg{display:block}
   border:3px solid transparent;
   cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s;
   position:relative;overflow:hidden;
-  /* reveal */
   opacity:0;transform:translateY(20px);
 }
 .picto-card.visible{opacity:1;transform:translateY(0)}
@@ -189,7 +180,6 @@ svg{display:block}
 .picto-top-bar{position:absolute;top:0;left:0;right:0;height:4px;border-radius:20px 20px 0 0}
 .picto-emoji{font-size:2.8rem;line-height:1}
 .picto-label{font-size:.8rem;font-weight:900;color:#444;text-align:center;line-height:1.2}
-
 /* ── SYLLABLE BOARD ───────────────── */
 .alpha-grid{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(56px,1fr));
@@ -243,7 +233,6 @@ svg{display:block}
   box-shadow:0 4px 12px rgba(0,0,0,.2);
 }
 .quick-btn:active{transform:scale(.92)}
-
 /* ── GAMES ────────────────────────── */
 .game-tabs{display:flex;gap:8px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none}
 .game-tab{
@@ -252,7 +241,6 @@ svg{display:block}
 }
 .game-tab.active{color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.25)}
 .game-tab:not(.active){background:#f1eeff;color:#555}
-
 /* Arma la Palabra */
 .word-card{
   background:linear-gradient(135deg,#fde68a,#fbbf24);
@@ -293,7 +281,6 @@ svg{display:block}
   font-family:'Fredoka One',cursive;font-size:1.1rem;color:#f59e0b;
   text-align:right;margin-bottom:8px;min-height:28px;
 }
-
 /* Letra Inicial */
 .letra-display{
   background:linear-gradient(135deg,#6366f1,#a855f7);
@@ -317,7 +304,6 @@ svg{display:block}
 .opt-emoji{font-size:3.4rem}
 .opt-word{font-family:'Fredoka One',cursive;font-size:1rem;color:#444}
 .opt-result{font-size:1.4rem;margin-top:4px}
-
 /* Memoria */
 .memo-info{display:flex;justify-content:space-between;margin-bottom:10px;font-weight:800;color:#8b7aaa;font-size:.9rem}
 .memo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:400px;margin:0 auto}
@@ -333,7 +319,6 @@ svg{display:block}
 .memo-card.face-down{background:linear-gradient(135deg,#6366f1,#a855f7)}
 .memo-card.face-up{background:var(--clr,#6366f1)}
 .memo-card.matched{border-color:#10b981;opacity:.65}
-
 /* Paint */
 .paint-pics{display:flex;gap:8px;overflow-x:auto;margin-bottom:10px;scrollbar-width:none}
 .paint-pic-btn{
@@ -373,7 +358,6 @@ svg{display:block}
   display:block;margin:8px auto 0;background:#fee2e2;color:#ef4444;
   border-radius:12px;padding:6px 20px;font-size:.8rem;font-weight:900;
 }
-
 /* ── SUCCESS / NEXT BUTTONS ───────── */
 .btn-next{
   font-family:'Fredoka One',cursive;font-size:1rem;
@@ -387,13 +371,11 @@ svg{display:block}
   background:#fee2e2;color:#ef4444;border-radius:12px;
   padding:7px 16px;font-size:.82rem;font-weight:900;margin-top:8px;
 }
-
 /* ── SECTION HEADER ───────────────── */
 .section-head{
   font-family:'Fredoka One',cursive;font-size:1rem;
   margin-bottom:8px;padding:4px 2px;
 }
-
 /* ── CONFETTI OVERLAY ─────────────── */
 #confetti-canvas{
   position:fixed;inset:0;pointer-events:none;z-index:8000;
@@ -410,7 +392,6 @@ svg{display:block}
   animation:celebPop .5s cubic-bezier(.175,.885,.32,1.275) both;
 }
 @keyframes celebPop{from{transform:scale(0) rotate(-10deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
-
 /* ── GENERIC UTILS ────────────────── */
 .center{text-align:center}
 .mt8{margin-top:8px}
@@ -418,16 +399,13 @@ svg{display:block}
 .mt16{margin-top:16px}
 .flex-center{display:flex;justify-content:center;align-items:center}
 .hint-text{font-size:.82rem;font-weight:800;color:#8b7aaa;text-align:center;margin:6px 0}
-
 /* ── FULLSCREEN ───────────────────── */
 body.is-fullscreen #hero{display:none}
 body.is-fullscreen #app{height:100dvh;overflow:hidden}
 body.is-fullscreen .tab-panel{height:calc(100dvh - var(--nav-h));overflow-y:auto}
-
 /* ── SCROLL TRANSITION ────────────── */
 .picto-card{transition:opacity .45s ease, transform .45s ease, box-shadow .15s, border-color .15s}
 .syl-card{transition:opacity .45s ease, transform .45s ease}
-
 /* ── MARCADOR DE VISITAS (oculto) ─── */
 #visit-panel{
   position:fixed;bottom:20px;right:20px;z-index:99999;
@@ -447,7 +425,6 @@ body.is-fullscreen .tab-panel{height:calc(100dvh - var(--nav-h));overflow-y:auto
 .vp-big{font-size:2.2rem;color:#fbbf24;text-align:center;line-height:1;margin-bottom:4px}
 .vp-close{position:absolute;top:10px;right:14px;cursor:pointer;font-size:1rem;opacity:.6}
 .vp-close:hover{opacity:1}
-
 /* ── ABRAPALABRA ──────────────────── */
 #app-nav{overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}
 #app-nav::-webkit-scrollbar{display:none}
@@ -461,38 +438,38 @@ body.is-fullscreen .tab-panel{height:calc(100dvh - var(--nav-h));overflow-y:auto
   background:linear-gradient(135deg,#6b21a8,#a855f7);
   color:#fff;box-shadow:0 4px 14px rgba(107,33,168,.4);
 }
+/* ── STORY SELECTOR ───────────────── */
+.story-btn{
+  border-radius:18px;padding:12px 16px;font-weight:900;font-size:.88rem;
+  transition:all .2s;flex:1;min-width:0;text-align:center;
+  border:3px solid transparent;
+}
+.story-btn.selected{color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.story-btn:not(.selected){background:#f1eeff;color:#555}
 </style>
 </head>
 <body>
-
 <div id="progress-bar"></div>
-
 <!-- ══ HERO ════════════════════════════════ -->
 <section id="hero">
   <div class="hero-glow"></div>
-  <!-- floating emojis injected by JS -->
   <div id="hero-emojis"></div>
-
   <h1 class="hero-title">Tablero AAC<br>Interactivo 🌟</h1>
   <p class="hero-sub">Comunicación · Aprendizaje · Juego</p>
-
   <div class="hero-badges">
     <span class="hero-badge">💬 Pictogramas</span>
     <span class="hero-badge">🔤 Sílabas</span>
     <span class="hero-badge">🎮 Juegos</span>
     <span class="hero-badge">📖 Abrapalabra</span>
   </div>
-
   <button class="hero-cta" onclick="document.getElementById('app').scrollIntoView({behavior:'smooth'})">
     ¡Empezar! ✨
   </button>
-
   <div class="hero-scroll-hint">
     <span>desliza</span>
     <div class="scroll-arrow"></div>
   </div>
 </section>
-
 <!-- ══ APP ══════════════════════════════════ -->
 <section id="app">
   <nav id="app-nav">
@@ -502,19 +479,15 @@ body.is-fullscreen .tab-panel{height:calc(100dvh - var(--nav-h));overflow-y:auto
     <button class="nav-tab" data-tab="abra" onclick="switchTab('abra')">📖 Abra</button>
     <button id="btn-fullscreen" onclick="toggleFullscreen()" title="Pantalla completa">🖥️</button>
   </nav>
-
   <div class="tab-panel active" id="panel-picto"></div>
   <div class="tab-panel" id="panel-syl"></div>
   <div class="tab-panel" id="panel-games"></div>
   <div class="tab-panel" id="panel-abra"></div>
 </section>
-
-<!-- confetti + celebrate overlay -->
 <canvas id="confetti-canvas"></canvas>
 <div id="celebrate-overlay" style="display:none">
   <div class="celebrate-box" id="celebrate-msg"></div>
 </div>
-
 <script>
 // ══════════════════════════════════════════
 // DATA
@@ -536,7 +509,7 @@ const CATEGORIES = [
     {emoji:"🐟",label:"Pez"},{emoji:"🐄",label:"Vaca"},
     {emoji:"🐴",label:"Caballo"},{emoji:"🦁",label:"León"},
     {emoji:"🐘",label:"Elefante"},{emoji:"🦋",label:"Mariposa"},
-    {emoji:"🐸",label:"Rana"},{emoji:"🐧",label:"Pingüino"},
+    {emoji:"🐸",label:"Sapo"},{emoji:"🐧",label:"Pingüino"},
     {emoji:"🐻",label:"Oso"},{emoji:"🦊",label:"Zorro"},
     {emoji:"🐢",label:"Tortuga"},{emoji:"🦕",label:"Dinosaurio"},
   ]},
@@ -600,7 +573,6 @@ const CATEGORIES = [
     {emoji:"🌊",label:"Mar"},{emoji:"🍂",label:"Otoño"},
   ]},
 ];
-
 const SYLLABLE_GROUPS = [
   {id:"a", label:"A", color:"#E74C3C", syllables:["A"]},
   {id:"e", label:"E", color:"#E67E22", syllables:["E"]},
@@ -645,7 +617,6 @@ const SYLLABLE_GROUPS = [
   {id:"pr",label:"Pr",color:"#512E5F",syllables:["pra","pre","pri","pro","pru"]},
   {id:"tr",label:"Tr",color:"#154360",syllables:["tra","tre","tri","tro","tru"]},
 ];
-
 const PHONETIC_FIXES = {
   "A":"a","E":"e","I":"i","O":"o","U":"u",
   "na":"ná","ne":"né","ni":"ní","no":"nó","nu":"nú",
@@ -693,7 +664,6 @@ const PHONETIC_FIXES = {
   "R":"erre","Rr":"erre doble","S":"ese","T":"te","Tr":"te-erre",
   "V":"uve","W":"doble uve","X":"equis","Y":"ye","Z":"zeta",
 };
-
 const WORDS_DATA = [
   {emoji:"🐱",word:"gato",syllables:["ga","to"]},
   {emoji:"🐶",word:"perro",syllables:["pe","rro"]},
@@ -716,7 +686,6 @@ const WORDS_DATA = [
   {emoji:"🎂",word:"torta",syllables:["tor","ta"]},
   {emoji:"🌺",word:"flor",syllables:["flor"]},
 ];
-
 const LETRA_GAME_DATA = [
   {letra:"M",items:[{emoji:"🍎",word:"manzana",ok:true},{emoji:"🐶",word:"perro",ok:false},{emoji:"🌙",word:"luna",ok:false},{emoji:"🐄",word:"vaca",ok:false}]},
   {letra:"P",items:[{emoji:"⚽",word:"pelota",ok:true},{emoji:"🐱",word:"gato",ok:false},{emoji:"🌹",word:"rosa",ok:false},{emoji:"🏠",word:"casa",ok:false}]},
@@ -729,11 +698,9 @@ const LETRA_GAME_DATA = [
   {letra:"R",items:[{emoji:"🌹",word:"rosa",ok:true},{emoji:"🐸",word:"sapo",ok:false},{emoji:"⚽",word:"pelota",ok:false},{emoji:"🐻",word:"oso",ok:false}]},
   {letra:"O",items:[{emoji:"🐻",word:"oso",ok:true},{emoji:"🍎",word:"manzana",ok:false},{emoji:"🐱",word:"gato",ok:false},{emoji:"🌹",word:"rosa",ok:false}]},
 ];
-
 const MEM_SYLLABLES = ["ma","pa","sa","la","ta","ca","no","pe","tu","fi","ro","go"];
 const VOWEL_COLORS = ["#E74C3C","#E67E22","#27AE60","#2980B9","#8E44AD"];
 const CARD_COLORS = ["#ef4444","#f59e0b","#10b981","#3b82f6","#8b5cf6","#ec4899","#14b8a6","#f97316","#84cc16","#06b6d4","#a855f7","#e11d48"];
-
 // ══════════════════════════════════════════
 // STATE
 // ══════════════════════════════════════════
@@ -752,7 +719,6 @@ const S = {
     masomenos: { grupoA: 4, grupoB: 7, emoji: '🟡', pregunta: 'mas', selected: null, stars: 0 },
   }
 };
-
 // ══════════════════════════════════════════
 // UTILS
 // ══════════════════════════════════════════
@@ -764,7 +730,6 @@ function shuffle(arr) {
   }
   return a;
 }
-
 function speak(text) {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
@@ -775,7 +740,6 @@ function speak(text) {
   u.pitch = 1.1;
   window.speechSynthesis.speak(u);
 }
-
 // ══════════════════════════════════════════
 // CELEBRATE
 // ══════════════════════════════════════════
@@ -822,7 +786,6 @@ function celebrate(msg) {
   draw();
   setTimeout(() => { overlay.style.display = 'none'; }, 2200);
 }
-
 // ══════════════════════════════════════════
 // SCROLL REVEAL
 // ══════════════════════════════════════════
@@ -841,15 +804,11 @@ function setupScrollReveal() {
     revealObserver.observe(el);
   });
 }
-
-// progress bar
 window.addEventListener('scroll', () => {
   const doc = document.documentElement;
   const pct = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
   document.getElementById('progress-bar').style.width = pct + '%';
 });
-
-// hero parallax
 window.addEventListener('scroll', () => {
   const hero = document.getElementById('hero');
   const title = hero.querySelector('.hero-title');
@@ -857,7 +816,6 @@ window.addEventListener('scroll', () => {
   const offset = window.scrollY;
   title.style.transform = `translateY(${offset * 0.25}px)`;
 });
-
 // ══════════════════════════════════════════
 // FULLSCREEN
 // ══════════════════════════════════════════
@@ -880,7 +838,6 @@ document.addEventListener('fullscreenchange', () => {
     document.getElementById('btn-fullscreen').textContent = '🖥️';
   }
 });
-
 // ══════════════════════════════════════════
 // TAB SWITCHING
 // ══════════════════════════════════════════
@@ -897,9 +854,8 @@ function switchTab(tab) {
   else if (tab === 'games') renderGames();
   else if (tab === 'abra') renderAbra();
 }
-
 // ══════════════════════════════════════════
-// SENTENCE BAR (shared HTML builder)
+// SENTENCE BAR
 // ══════════════════════════════════════════
 function sentenceBarHTML(sentence, color, light, prefix) {
   const chips = sentence.length === 0
@@ -920,7 +876,6 @@ function sentenceBarHTML(sentence, color, light, prefix) {
       </div>
     </div>`;
 }
-
 // ══════════════════════════════════════════
 // PICTO BOARD
 // ══════════════════════════════════════════
@@ -933,7 +888,6 @@ function renderPicto() {
       transform:${S.picto.cat===i?'scale(1.06)':'scale(1)'}">
       ${c.label}
     </button>`).join('');
-
   const cards = cat.items.map((item, i) =>
     `<div class="picto-card" onclick="pictoTap(${i})"
       style="transition-delay:${i*45}ms;background:${item.cardBg||'#fff'}">
@@ -941,45 +895,28 @@ function renderPicto() {
       <div class="picto-emoji">${item.emoji}</div>
       <div class="picto-label">${item.label}</div>
     </div>`).join('');
-
   document.getElementById('panel-picto').innerHTML = `
     ${sentenceBarHTML(S.picto.sentence, cat.color, cat.light, 'picto')}
     <div class="cat-scroll">${pills}</div>
     <div class="section-head" style="color:${cat.color}">${cat.label}</div>
     <div class="picto-grid">${cards}</div>`;
-
   setTimeout(setupScrollReveal, 60);
 }
-
 function pictoSetCat(i) { S.picto.cat = i; renderPicto(); }
-
 function pictoTap(i) {
   const item = CATEGORIES[S.picto.cat].items[i];
   speak(item.label);
   S.picto.sentence = [...S.picto.sentence, item];
   renderPicto();
 }
-function pictoSentenceDel() {
-  S.picto.sentence = S.picto.sentence.slice(0,-1);
-  renderPicto();
-}
-function pictoSentenceClr() {
-  S.picto.sentence = [];
-  window.speechSynthesis?.cancel();
-  renderPicto();
-}
-function pictoSentenceSay() {
-  if (!S.picto.sentence.length) return;
-  speak(S.picto.sentence.map(i => i.label).join(' '));
-}
-
+function pictoSentenceDel() { S.picto.sentence = S.picto.sentence.slice(0,-1); renderPicto(); }
+function pictoSentenceClr() { S.picto.sentence = []; window.speechSynthesis?.cancel(); renderPicto(); }
+function pictoSentenceSay() { if (!S.picto.sentence.length) return; speak(S.picto.sentence.map(i => i.label).join(' ')); }
 // ══════════════════════════════════════════
 // SYLLABLE BOARD
 // ══════════════════════════════════════════
 function renderSyl() {
   const group = SYLLABLE_GROUPS[S.syl.group];
-  const isVowel = group.id === 'vocales';
-
   const alphaBtns = SYLLABLE_GROUPS.map((g, i) => {
     const active = S.syl.group === i;
     const fs = g.label.length > 2 ? '0.8rem' : g.label.length === 2 ? '1.05rem' : '1.35rem';
@@ -987,7 +924,6 @@ function renderSyl() {
       style="background:${g.color};color:${active?'#222':'#fff'};font-size:${fs};box-shadow:0 4px 0 ${g.color}99"
       onclick="sylSetGroup(${i})">${g.label}</button>`;
   }).join('');
-
   const sylCards = group.syllables.map((syl, i) => {
     const clr = VOWEL_COLORS[i % VOWEL_COLORS.length];
     return `<div class="syl-card" onclick="sylTap('${syl}')"
@@ -998,13 +934,11 @@ function renderSyl() {
       <div class="syl-sub">${syl.toLowerCase()}</div>
     </div>`;
   }).join('');
-
   const quickBtns = group.syllables.map((syl, i) => {
     const clr = VOWEL_COLORS[i % VOWEL_COLORS.length];
     return `<button class="quick-btn" style="background:${clr};box-shadow:0 4px 12px ${clr}55"
       onclick="sylTap('${syl}')">${syl}</button>`;
   }).join('');
-
   document.getElementById('panel-syl').innerHTML = `
     ${sentenceBarHTML(S.syl.sentence, group.color, '#F5F0FF', 'syl')}
     <div style="background:#fff;border-radius:16px;padding:10px;margin-bottom:10px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
@@ -1019,34 +953,13 @@ function renderSyl() {
     </div>
     <div class="syl-cards-grid">${sylCards}</div>
     <div class="quick-strip">${quickBtns}</div>`;
-
   setTimeout(setupScrollReveal, 60);
 }
-
-function sylSetGroup(i) {
-  S.syl.group = i;
-  speak(SYLLABLE_GROUPS[i].label);
-  renderSyl();
-}
-function sylTap(syl) {
-  speak(syl);
-  S.syl.sentence = [...S.syl.sentence, { label: syl, emoji: null }];
-  renderSyl();
-}
-function sylSentenceDel() {
-  S.syl.sentence = S.syl.sentence.slice(0,-1);
-  renderSyl();
-}
-function sylSentenceClr() {
-  S.syl.sentence = [];
-  window.speechSynthesis?.cancel();
-  renderSyl();
-}
-function sylSentenceSay() {
-  if (!S.syl.sentence.length) return;
-  speak(S.syl.sentence.map(i => i.label).join(' '));
-}
-
+function sylSetGroup(i) { S.syl.group = i; speak(SYLLABLE_GROUPS[i].label); renderSyl(); }
+function sylTap(syl) { speak(syl); S.syl.sentence = [...S.syl.sentence, { label: syl, emoji: null }]; renderSyl(); }
+function sylSentenceDel() { S.syl.sentence = S.syl.sentence.slice(0,-1); renderSyl(); }
+function sylSentenceClr() { S.syl.sentence = []; window.speechSynthesis?.cancel(); renderSyl(); }
+function sylSentenceSay() { if (!S.syl.sentence.length) return; speak(S.syl.sentence.map(i => i.label).join(' ')); }
 // ══════════════════════════════════════════
 // GAMES BOARD
 // ══════════════════════════════════════════
@@ -1059,13 +972,11 @@ const GAMES = [
   {id:'sumar',  label:'➕ Sumar',    color:'#f59e0b'},
   {id:'masomenos', label:'⚖️ Más/Menos', color:'#ef4444'},
 ];
-
 function renderGames() {
   const tabs = GAMES.map(g =>
     `<button class="game-tab${S.game.active===g.id?' active':''}"
       style="${S.game.active===g.id?`background:${g.color}`:'background:#f1eeff'}"
       onclick="switchGame('${g.id}')">${g.label}</button>`).join('');
-
   let content = '';
   if (S.game.active === 'arma')      content = renderArma();
   if (S.game.active === 'letra')     content = renderLetra();
@@ -1074,13 +985,10 @@ function renderGames() {
   if (S.game.active === 'contar')    content = renderContar();
   if (S.game.active === 'sumar')     content = renderSumar();
   if (S.game.active === 'masomenos') content = renderMasoMenos();
-
   document.getElementById('panel-games').innerHTML =
     `<div class="game-tabs">${tabs}</div>${content}`;
-
   if (S.game.active === 'paint') attachPaintEvents();
 }
-
 function switchGame(id) {
   S.game.active = id;
   if (id === 'arma')      initArma();
@@ -1090,19 +998,18 @@ function switchGame(id) {
   if (id === 'masomenos') initMasoMenos();
   renderGames();
 }
-
 // ── GAME 1: Arma la Palabra ────────────────
 function initArma() {
   const g = S.game.arma;
   const word = WORDS_DATA[g.idx];
   const correct = word.syllables;
-  const pool = ["be","ca","de","fe","le","me","pe","re","se","te","bo","do","lo","mo","ro","so","bi","di","li","ni","pi","ri","si","ti","vi"];
+  // Pool extended to include 'rro' and other double-consonant syllables
+  const pool = ["be","ca","de","fe","le","me","pe","re","se","te","bo","do","lo","mo","ro","so","bi","di","li","ni","pi","ri","si","ti","vi","rro","rra","rre","po","no","to","co","go","fo","jo","ko","ho"];
   const distractors = shuffle(pool.filter(s => !correct.includes(s))).slice(0,3);
   g.opts = shuffle([...correct, ...distractors]);
   g.chosen = [];
   g.result = null;
 }
-
 function renderArma() {
   const g = S.game.arma;
   const word = WORDS_DATA[g.idx];
@@ -1113,7 +1020,6 @@ function renderArma() {
     if (g.result === 'err') cls += ' err';
     return `<div class="${cls}">${g.chosen[i]||''}</div>`;
   }).join('');
-
   const opts = g.result ? '' : g.opts.map((syl,oi) => {
     const usedCount = g.chosen.filter(s => s===syl).length;
     const availCount = word.syllables.filter(s => s===syl).length;
@@ -1123,16 +1029,13 @@ function renderArma() {
       ${syl}
     </button>`;
   }).join('');
-
   const resultBanner = g.result === 'ok' ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#10b981,#34d399);box-shadow:0 6px 22px rgba(16,185,129,.4)">
       🎉 ¡Muy bien! 🌟
       <button class="btn-next" onclick="armaNext()" style="margin:10px auto 0">Siguiente ▶</button>
     </div>` : '';
-
   const backBtn = !g.result && g.chosen.length > 0
     ? `<button class="btn-back" onclick="armaBack()">↩ Borrar</button>` : '';
-
   return `
     <div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:20px">
       <div class="stars-count">${'⭐'.repeat(g.stars)}</div>
@@ -1147,7 +1050,6 @@ function renderArma() {
       ${backBtn}
     </div>`;
 }
-
 function armaPickSyl(syl) {
   const g = S.game.arma;
   if (g.result) return;
@@ -1176,13 +1078,11 @@ function armaNext() {
   initArma();
   renderGames();
 }
-
 // ── GAME 2: Letra Inicial ──────────────────
 function renderLetra() {
   const g = S.game.letra;
   const q = LETRA_GAME_DATA[g.idx];
   const cols = ["#ef4444","#f59e0b","#10b981","#3b82f6"];
-
   const cards = q.items.map((item, i) => {
     let cls = 'opt-card';
     let result = '';
@@ -1198,12 +1098,10 @@ function renderLetra() {
       ${result}
     </div>`;
   }).join('');
-
   const nextBtn = g.selected ? `
     <div class="flex-center mt16">
       <button class="btn-next" onclick="letraNext()">Siguiente ▶</button>
     </div>` : '';
-
   return `
     <div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:20px">
       <div class="stars-count">${'⭐'.repeat(g.stars)}</div>
@@ -1217,7 +1115,6 @@ function renderLetra() {
       ${nextBtn}
     </div>`;
 }
-
 function letraTap(i) {
   const g = S.game.letra;
   if (g.selected) return;
@@ -1240,7 +1137,6 @@ function letraNext() {
   g.selected = null;
   renderGames();
 }
-
 // ── GAME 3: Memoria ────────────────────────
 function initMemo() {
   const syls = MEM_SYLLABLES.slice(0, 8);
@@ -1249,11 +1145,9 @@ function initMemo() {
   })));
   S.game.memo = { cards: deck, flipped: [], matched: [], moves: 0 };
 }
-
 function renderMemo() {
   const g = S.game.memo;
   const won = g.matched.length === 8;
-
   const cards = g.cards.map(card => {
     const isFlipped = g.flipped.includes(card.id) || g.matched.includes(card.syl);
     const isMatched = g.matched.includes(card.syl);
@@ -1265,7 +1159,6 @@ function renderMemo() {
       ${isFlipped ? `<span>${card.syl}</span>` : '<span style="font-size:1.4rem">🌸</span>'}
     </div>`;
   }).join('');
-
   const wonBanner = won ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);box-shadow:0 6px 22px rgba(251,191,36,.5);margin-bottom:12px">
       🎉 ¡Ganaste! 🌟🌟🌟
@@ -1273,7 +1166,6 @@ function renderMemo() {
         Jugar de nuevo 🔄
       </button>
     </div>` : '';
-
   return `
     <div style="padding-bottom:20px">
       <div class="memo-info">
@@ -1285,7 +1177,6 @@ function renderMemo() {
       <div class="memo-grid">${cards}</div>
     </div>`;
 }
-
 let memoTimeout = null;
 function memoTap(id) {
   const g = S.game.memo;
@@ -1312,14 +1203,9 @@ function memoTap(id) {
   renderGames();
 }
 function memoRestart() { initMemo(); renderGames(); }
-
 // ── GAME 4: Paint ──────────────────────────
 const PAINT_PICS = [
-  {name:'☀️ Sol'},
-  {name:'🌸 Flor'},
-  {name:'🏠 Casa'},
-  {name:'🦋 Mariposa'},
-  {name:'🐱 Gato'},
+  {name:'☀️ Sol'},{name:'🌸 Flor'},{name:'🏠 Casa'},{name:'🦋 Mariposa'},{name:'🐱 Gato'},
 ];
 const PALETTE = [
   {color:'#ef4444',name:'rojo'},{color:'#f97316',name:'naranja'},
@@ -1329,11 +1215,10 @@ const PALETTE = [
   {color:'#84cc16',name:'verde lima'},{color:'#f59e0b',name:'ámbar'},
   {color:'#a16207',name:'café'},{color:'#374151',name:'gris'},
 ];
-
 function getSVG(picIdx, fills) {
   const f = (id, def='#e2e8f0') => fills[id] || def;
   switch(picIdx) {
-    case 0: { // SOL
+    case 0: {
       const rays = [0,45,90,135,180,225,270,315].map((a,i) => {
         const r=a*Math.PI/180, x1=100+52*Math.cos(r), y1=100+52*Math.sin(r),
               x2=100+78*Math.cos(r), y2=100+78*Math.sin(r);
@@ -1349,7 +1234,7 @@ function getSVG(picIdx, fills) {
         <path d="M80 112 Q100 128 120 112" stroke="${f('boca','#555')}" stroke-width="4" fill="none" stroke-linecap="round" data-region="boca" style="cursor:pointer"/>
       </svg>`;
     }
-    case 1: { // FLOR
+    case 1: {
       const petals = [0,60,120,180,240,300].map((a,i) => {
         const rd=a*Math.PI/180, cx=100+40*Math.cos(rd), cy=108+40*Math.sin(rd);
         return `<ellipse cx="${cx}" cy="${cy}" rx="18" ry="25"
@@ -1363,7 +1248,7 @@ function getSVG(picIdx, fills) {
         <circle cx="100" cy="108" r="30" fill="${f('centro','#fbbf24')}" stroke="#555" stroke-width="2" data-region="centro" style="cursor:pointer"/>
       </svg>`;
     }
-    case 2: { // CASA
+    case 2: {
       return `<svg viewBox="0 0 200 200" style="width:100%;height:100%;max-height:280px">
         <rect x="132" y="26" width="18" height="38" rx="3" fill="${f('chimenea','#9ca3af')}" stroke="#555" stroke-width="2" data-region="chimenea" style="cursor:pointer"/>
         <polygon points="14,92 100,16 186,92" fill="${f('techo','#ef4444')}" stroke="#555" stroke-width="2" data-region="techo" style="cursor:pointer"/>
@@ -1374,7 +1259,7 @@ function getSVG(picIdx, fills) {
         <rect x="0" y="190" width="200" height="12" rx="3" fill="${f('pasto','#22c55e')}" stroke="none" data-region="pasto" style="cursor:pointer"/>
       </svg>`;
     }
-    case 3: { // MARIPOSA
+    case 3: {
       return `<svg viewBox="0 0 200 180" style="width:100%;height:100%;max-height:280px">
         <ellipse cx="62" cy="68" rx="56" ry="46" fill="${f('ala1','#a78bfa')}" stroke="#555" stroke-width="2" data-region="ala1" style="cursor:pointer"/>
         <ellipse cx="138" cy="68" rx="56" ry="46" fill="${f('ala2','#c4b5fd')}" stroke="#555" stroke-width="2" data-region="ala2" style="cursor:pointer"/>
@@ -1389,7 +1274,7 @@ function getSVG(picIdx, fills) {
         <circle cx="126" cy="16" r="6" fill="${f('antenas','#555')}" data-region="antenas" style="cursor:pointer"/>
       </svg>`;
     }
-    case 4: { // GATO
+    case 4: {
       return `<svg viewBox="0 0 200 195" style="width:100%;height:100%;max-height:280px">
         <polygon points="38,88 58,28 90,82" fill="${f('oreja1','#f9a8d4')}" stroke="#555" stroke-width="2" data-region="oreja1" style="cursor:pointer"/>
         <polygon points="162,88 142,28 110,82" fill="${f('oreja2','#f9a8d4')}" stroke="#555" stroke-width="2" data-region="oreja2" style="cursor:pointer"/>
@@ -1406,7 +1291,6 @@ function getSVG(picIdx, fills) {
     default: return '';
   }
 }
-
 function renderPaint() {
   const g = S.game.paint;
   const picTabs = PAINT_PICS.map((p,i) =>
@@ -1414,12 +1298,10 @@ function renderPaint() {
       style="background:${g.picIdx===i?'linear-gradient(135deg,#f953c6,#b91d73)':'#f1eeff'};
       color:${g.picIdx===i?'#fff':'#555'};
       box-shadow:${g.picIdx===i?'0 4px 14px rgba(249,83,198,.4)':'none'}">${p.name}</button>`).join('');
-
   const dots = PALETTE.map(p =>
     `<div class="palette-dot${g.color===p.color?' active':''}"
       style="background:${p.color}"
       onclick="paintSetColor('${p.color}','${p.name}')"></div>`).join('');
-
   return `
     <div style="padding-bottom:20px">
       <div class="paint-pics">${picTabs}</div>
@@ -1436,7 +1318,6 @@ function renderPaint() {
       </div>
     </div>`;
 }
-
 function attachPaintEvents() {
   const wrap = document.getElementById('paint-svg-wrap');
   if (!wrap) return;
@@ -1451,46 +1332,28 @@ function attachPaintEvents() {
     attachPaintEvents();
   });
 }
-
-function paintSetColor(color, name) {
-  speak(name);
-  S.game.paint.color = color;
-  renderGames();
-}
-function paintChangePic(i) {
-  S.game.paint.picIdx = i;
-  S.game.paint.fills = {};
-  renderGames();
-}
+function paintSetColor(color, name) { speak(name); S.game.paint.color = color; renderGames(); }
+function paintChangePic(i) { S.game.paint.picIdx = i; S.game.paint.fills = {}; renderGames(); }
 function paintClear() { S.game.paint.fills = {}; renderGames(); }
-
 // ══════════════════════════════════════════
 // JUEGOS DE MATEMÁTICAS
 // ══════════════════════════════════════════
 const MATH_EMOJIS = ['🍎','⭐','🐶','🌸','🍪','🎈','🐠','🌻','🍭','🦋'];
-
 function randInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
-
 // ── JUEGO 5: Contar ────────────────────────
 function initContar() {
   const g = S.game.contar;
   g.cantidad = randInt(1, 10);
   g.emoji    = MATH_EMOJIS[randInt(0, MATH_EMOJIS.length - 1)];
   g.result   = null;
-  // 4 opciones: la correcta + 3 distractores
   const correct = g.cantidad;
   const pool = new Set();
-  while (pool.size < 3) {
-    const n = randInt(1, 10);
-    if (n !== correct) pool.add(n);
-  }
+  while (pool.size < 3) { const n = randInt(1, 10); if (n !== correct) pool.add(n); }
   g.opts = shuffle([correct, ...pool]);
 }
-
 function renderContar() {
   const g = S.game.contar;
   const objetos = Array(g.cantidad).fill(g.emoji).join(' ');
-
   const botones = g.opts.map(n => {
     let bg = 'linear-gradient(135deg,#10b981,#34d399)';
     let extra = '';
@@ -1506,81 +1369,51 @@ function renderContar() {
       box-shadow:${g.result===null?'0 5px 18px rgba(16,185,129,.4)':'none'};
       transition:all .2s;width:100%">${n}${extra}</button>`;
   }).join('');
-
   const resultBanner = g.result === g.cantidad ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#10b981,#34d399);box-shadow:0 6px 22px rgba(16,185,129,.4)">
       🎉 ¡Correcto! Son ${g.cantidad} ${g.emoji}
-      <button class="btn-next" onclick="initContar();renderGames()" style="margin:10px auto 0">
-        Siguiente ▶
-      </button>
+      <button class="btn-next" onclick="initContar();renderGames()" style="margin:10px auto 0">Siguiente ▶</button>
     </div>` : g.result !== null ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);box-shadow:0 6px 22px rgba(245,158,11,.4)">
       Son ${g.cantidad}... ¡Inténtalo de nuevo! 💪
-      <button class="btn-next" onclick="initContar();renderGames()"
-        style="margin:10px auto 0;background:white;color:#d97706">Otra vez 🔄</button>
+      <button class="btn-next" onclick="initContar();renderGames()" style="margin:10px auto 0;background:white;color:#d97706">Otra vez 🔄</button>
     </div>` : '';
-
   return `
     <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding-bottom:20px">
       <div class="stars-count">${'⭐'.repeat(g.stars)}</div>
-      <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;color:#10b981;text-align:center">
-        ¿Cuántos ${g.emoji} hay? 👀
-      </div>
-      <!-- Objetos a contar -->
+      <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;color:#10b981;text-align:center">¿Cuántos ${g.emoji} hay? 👀</div>
       <div onclick="speak('Cuenta los ${g.emoji}')"
-        style="background:linear-gradient(135deg,#ecfdf5,#d1fae5);
-        border:3px solid #6ee7b7;border-radius:24px;padding:24px 20px;
-        text-align:center;width:100%;max-width:360px;
-        font-size:clamp(1.6rem,6vw,2.4rem);line-height:1.7;cursor:pointer;
-        box-shadow:0 6px 24px rgba(16,185,129,.2);word-break:break-all">
-        ${objetos}
-      </div>
+        style="background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:3px solid #6ee7b7;border-radius:24px;padding:24px 20px;text-align:center;width:100%;max-width:360px;font-size:clamp(1.6rem,6vw,2.4rem);line-height:1.7;cursor:pointer;box-shadow:0 6px 24px rgba(16,185,129,.2);word-break:break-all">${objetos}</div>
       <p class="hint-text">Toca el número correcto 👇</p>
-      <!-- Opciones -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:300px">
-        ${botones}
-      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:300px">${botones}</div>
       ${resultBanner}
     </div>`;
 }
-
 function contarElegir(n) {
   const g = S.game.contar;
   if (g.result !== null) return;
   g.result = n;
   speak(String(n));
-  if (n === g.cantidad) {
-    g.stars++;
-    speak('¡Muy bien! Son ' + g.cantidad);
-    setTimeout(() => celebrate('🔢 ¡' + g.cantidad + ' ' + g.emoji + '! 🎉'), 300);
-  } else {
-    speak('Intenta de nuevo');
-  }
+  if (n === g.cantidad) { g.stars++; speak('¡Muy bien! Son ' + g.cantidad); setTimeout(() => celebrate('🔢 ¡' + g.cantidad + ' ' + g.emoji + '! 🎉'), 300); }
+  else { speak('Intenta de nuevo'); }
   renderGames();
 }
-
 // ── JUEGO 6: Sumar ─────────────────────────
 function initSumar() {
   const g = S.game.sumar;
-  g.a     = randInt(1, 5);
-  g.b     = randInt(1, 5);
+  g.a = randInt(1, 5); g.b = randInt(1, 5);
   g.emoji = MATH_EMOJIS[randInt(0, MATH_EMOJIS.length - 1)];
   g.result = null;
   const correct = g.a + g.b;
   const pool = new Set();
-  while (pool.size < 3) {
-    const n = randInt(Math.max(1, correct - 3), Math.min(10, correct + 3));
-    if (n !== correct) pool.add(n);
-  }
+  while (pool.size < 3) { const n = randInt(Math.max(1, correct - 3), Math.min(10, correct + 3)); if (n !== correct) pool.add(n); }
   g.opts = shuffle([correct, ...pool]);
 }
-
 function renderSumar() {
   const g = S.game.sumar;
   const correct = g.a + g.b;
-  const grupoA  = Array(g.a).fill(g.emoji).join('');
-  const grupoB  = Array(g.b).fill(g.emoji).join('');
-
+  const grupoA = Array(g.a).fill(g.emoji).join('');
+  const grupoB = Array(g.b).fill(g.emoji).join('');
   const botones = g.opts.map(n => {
     let bg = '#f1eeff', color = '#7c3aed', shadow = 'none';
     if (g.result !== null) {
@@ -1588,97 +1421,59 @@ function renderSumar() {
       else if (n === g.result) { bg = 'linear-gradient(135deg,#ef4444,#fca5a5)'; color = '#fff'; }
       else { bg = '#e5e7eb'; color = '#aaa'; }
     }
-    return `<button onclick="sumarElegir(${n})"
-      ${g.result !== null && n !== correct ? 'disabled' : ''}
-      style="background:${bg};color:${color};border-radius:18px;padding:16px 8px;
-      font-family:'Fredoka One',cursive;font-size:1.8rem;width:100%;
-      box-shadow:${shadow};transition:all .2s">${n}</button>`;
+    return `<button onclick="sumarElegir(${n})" ${g.result !== null && n !== correct ? 'disabled' : ''}
+      style="background:${bg};color:${color};border-radius:18px;padding:16px 8px;font-family:'Fredoka One',cursive;font-size:1.8rem;width:100%;box-shadow:${shadow};transition:all .2s">${n}</button>`;
   }).join('');
-
   const resultBanner = g.result === correct ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);box-shadow:0 6px 22px rgba(245,158,11,.4)">
       🌟 ¡Correcto! ${g.a} + ${g.b} = ${correct}
-      <button class="btn-next" onclick="initSumar();renderGames()" style="margin:10px auto 0">
-        Siguiente ▶
-      </button>
+      <button class="btn-next" onclick="initSumar();renderGames()" style="margin:10px auto 0">Siguiente ▶</button>
     </div>` : g.result !== null ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#6366f1,#818cf8);box-shadow:0 6px 22px rgba(99,102,241,.4)">
       La respuesta es ${correct} 💡
-      <button class="btn-next" onclick="initSumar();renderGames()"
-        style="margin:10px auto 0;background:white;color:#4f46e5">Otra vez 🔄</button>
+      <button class="btn-next" onclick="initSumar();renderGames()" style="margin:10px auto 0;background:white;color:#4f46e5">Otra vez 🔄</button>
     </div>` : '';
-
   return `
     <div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:20px">
       <div class="stars-count">${'⭐'.repeat(g.stars)}</div>
-      <!-- Ecuación visual -->
       <div onclick="speak('${g.a} más ${g.b} es igual a cuánto')"
-        style="background:linear-gradient(135deg,#fffbeb,#fef3c7);
-        border:3px solid #fbbf24;border-radius:24px;
-        padding:20px 16px;width:100%;max-width:360px;cursor:pointer;
-        box-shadow:0 6px 24px rgba(251,191,36,.25);text-align:center">
-        <!-- Grupo A -->
-        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;
-          font-size:2rem;line-height:1.5;min-height:44px">${grupoA}</div>
-        <!-- Operador -->
-        <div style="font-family:'Fredoka One',cursive;font-size:2.2rem;
-          color:#d97706;margin:6px 0">＋</div>
-        <!-- Grupo B -->
-        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;
-          font-size:2rem;line-height:1.5;min-height:44px">${grupoB}</div>
-        <!-- Igual -->
-        <div style="font-family:'Fredoka One',cursive;font-size:2.2rem;color:#d97706;margin-top:6px">
-          ＝ <span style="color:#92400e;font-size:2.5rem">?</span>
-        </div>
-        <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:#b45309;margin-top:4px">
-          ${g.a} + ${g.b} = ?
-        </div>
+        style="background:linear-gradient(135deg,#fffbeb,#fef3c7);border:3px solid #fbbf24;border-radius:24px;padding:20px 16px;width:100%;max-width:360px;cursor:pointer;box-shadow:0 6px 24px rgba(251,191,36,.25);text-align:center">
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;font-size:2rem;line-height:1.5;min-height:44px">${grupoA}</div>
+        <div style="font-family:'Fredoka One',cursive;font-size:2.2rem;color:#d97706;margin:6px 0">＋</div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;font-size:2rem;line-height:1.5;min-height:44px">${grupoB}</div>
+        <div style="font-family:'Fredoka One',cursive;font-size:2.2rem;color:#d97706;margin-top:6px">＝ <span style="color:#92400e;font-size:2.5rem">?</span></div>
+        <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:#b45309;margin-top:4px">${g.a} + ${g.b} = ?</div>
       </div>
       <p class="hint-text">¿Cuántos ${g.emoji} hay en total? 🤔</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:300px">
-        ${botones}
-      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:300px">${botones}</div>
       ${resultBanner}
     </div>`;
 }
-
 function sumarElegir(n) {
   const g = S.game.sumar;
   if (g.result !== null) return;
   g.result = n;
   const correct = g.a + g.b;
   speak(String(n));
-  if (n === correct) {
-    g.stars++;
-    speak('¡Muy bien! ' + g.a + ' más ' + g.b + ' es ' + correct);
-    setTimeout(() => celebrate('➕ ' + g.a + ' + ' + g.b + ' = ' + correct + ' 🌟'), 300);
-  } else {
-    speak('No es ese. La respuesta es ' + correct);
-  }
+  if (n === correct) { g.stars++; speak('¡Muy bien! ' + g.a + ' más ' + g.b + ' es ' + correct); setTimeout(() => celebrate('➕ ' + g.a + ' + ' + g.b + ' = ' + correct + ' 🌟'), 300); }
+  else { speak('No es ese. La respuesta es ' + correct); }
   renderGames();
 }
-
 // ── JUEGO 7: Más o Menos ──────────────────
 function initMasoMenos() {
   const g = S.game.masomenos;
   let a = randInt(1, 9), b = randInt(1, 9);
   while (a === b) b = randInt(1, 9);
-  g.grupoA   = a;
-  g.grupoB   = b;
-  g.emoji    = MATH_EMOJIS[randInt(0, MATH_EMOJIS.length - 1)];
+  g.grupoA = a; g.grupoB = b;
+  g.emoji = MATH_EMOJIS[randInt(0, MATH_EMOJIS.length - 1)];
   g.pregunta = Math.random() > 0.5 ? 'mas' : 'menos';
   g.selected = null;
 }
-
 function renderMasoMenos() {
   const g = S.game.masomenos;
-  const correcta = g.pregunta === 'mas'
-    ? (g.grupoA > g.grupoB ? 'A' : 'B')
-    : (g.grupoA < g.grupoB ? 'A' : 'B');
-
+  const correcta = g.pregunta === 'mas' ? (g.grupoA > g.grupoB ? 'A' : 'B') : (g.grupoA < g.grupoB ? 'A' : 'B');
   const pregTexto = g.pregunta === 'mas' ? '¿Cuál tiene MÁS?' : '¿Cuál tiene MENOS?';
   const pregColor = g.pregunta === 'mas' ? '#10b981' : '#ef4444';
-
   const tarjeta = (letra, cant) => {
     const objs = Array(cant).fill(g.emoji).join(' ');
     let bg = '#fff', border = '3px solid #e5e7eb', shadow = '0 4px 16px rgba(0,0,0,.07)';
@@ -1688,80 +1483,46 @@ function renderMasoMenos() {
     }
     const tick = g.selected && letra === correcta ? '<div style="font-size:2rem;margin-top:8px">✅</div>' :
                  g.selected && letra === g.selected && letra !== correcta ? '<div style="font-size:2rem;margin-top:8px">❌</div>' : '';
-    return `
-      <div onclick="masoMenosElegir('${letra}')"
-        style="background:${bg};border:${border};border-radius:22px;
-        padding:16px 10px;text-align:center;cursor:${g.selected?'default':'pointer'};
-        box-shadow:${shadow};transition:all .25s;flex:1">
-        <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;color:#888;margin-bottom:8px">
-          Grupo ${letra}
-        </div>
-        <div style="font-size:clamp(1.2rem,4vw,1.7rem);line-height:1.6;word-break:break-all">
-          ${objs}
-        </div>
-        <div style="font-family:'Fredoka One',cursive;font-size:1.6rem;color:#555;margin-top:8px">
-          ${cant}
-        </div>
-        ${tick}
-      </div>`;
+    return `<div onclick="masoMenosElegir('${letra}')"
+      style="background:${bg};border:${border};border-radius:22px;padding:16px 10px;text-align:center;cursor:${g.selected?'default':'pointer'};box-shadow:${shadow};transition:all .25s;flex:1">
+      <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;color:#888;margin-bottom:8px">Grupo ${letra}</div>
+      <div style="font-size:clamp(1.2rem,4vw,1.7rem);line-height:1.6;word-break:break-all">${objs}</div>
+      <div style="font-family:'Fredoka One',cursive;font-size:1.6rem;color:#555;margin-top:8px">${cant}</div>
+      ${tick}
+    </div>`;
   };
-
-  const resultBanner = g.selected ? (
-    g.selected === correcta ? `
+  const resultBanner = g.selected ? (g.selected === correcta ? `
     <div class="result-banner" style="background:linear-gradient(135deg,#10b981,#34d399);box-shadow:0 6px 22px rgba(16,185,129,.4)">
       🎉 ¡Correcto! El grupo ${correcta} tiene ${g.pregunta === 'mas' ? 'más' : 'menos'}
-      <button class="btn-next" onclick="initMasoMenos();renderGames()" style="margin:10px auto 0">
-        Siguiente ▶
-      </button>
+      <button class="btn-next" onclick="initMasoMenos();renderGames()" style="margin:10px auto 0">Siguiente ▶</button>
     </div>` : `
     <div class="result-banner" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);box-shadow:0 6px 22px rgba(245,158,11,.4)">
       El grupo ${correcta} tiene ${g.pregunta === 'mas' ? 'más' : 'menos'} 💡
-      <button class="btn-next" onclick="initMasoMenos();renderGames()"
-        style="margin:10px auto 0;background:white;color:#d97706">Otra vez 🔄</button>
-    </div>`
-  ) : '';
-
+      <button class="btn-next" onclick="initMasoMenos();renderGames()" style="margin:10px auto 0;background:white;color:#d97706">Otra vez 🔄</button>
+    </div>`) : '';
   return `
     <div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:20px">
       <div class="stars-count">${'⭐'.repeat(g.stars)}</div>
-      <div style="font-family:'Fredoka One',cursive;font-size:1.3rem;
-        color:${pregColor};text-align:center;
-        background:${pregColor}18;border:3px solid ${pregColor}55;
-        border-radius:18px;padding:12px 24px;width:100%;max-width:360px">
-        ${pregTexto}
-      </div>
-      <div style="display:flex;gap:12px;width:100%;max-width:380px">
-        ${tarjeta('A', g.grupoA)}
-        ${tarjeta('B', g.grupoB)}
-      </div>
+      <div style="font-family:'Fredoka One',cursive;font-size:1.3rem;color:${pregColor};text-align:center;background:${pregColor}18;border:3px solid ${pregColor}55;border-radius:18px;padding:12px 24px;width:100%;max-width:360px">${pregTexto}</div>
+      <div style="display:flex;gap:12px;width:100%;max-width:380px">${tarjeta('A', g.grupoA)}${tarjeta('B', g.grupoB)}</div>
       ${resultBanner}
     </div>`;
 }
-
 function masoMenosElegir(letra) {
   const g = S.game.masomenos;
   if (g.selected) return;
   g.selected = letra;
-  const correcta = g.pregunta === 'mas'
-    ? (g.grupoA > g.grupoB ? 'A' : 'B')
-    : (g.grupoA < g.grupoB ? 'A' : 'B');
+  const correcta = g.pregunta === 'mas' ? (g.grupoA > g.grupoB ? 'A' : 'B') : (g.grupoA < g.grupoB ? 'A' : 'B');
   const val = letra === 'A' ? g.grupoA : g.grupoB;
   speak(String(val));
-  if (letra === correcta) {
-    g.stars++;
-    speak('¡Correcto! El grupo ' + letra + ' tiene ' + (g.pregunta === 'mas' ? 'más' : 'menos'));
-    setTimeout(() => celebrate('⚖️ ¡Muy bien! 🌟'), 300);
-  } else {
-    speak('No es ese. El grupo ' + correcta + ' tiene ' + (g.pregunta === 'mas' ? 'más' : 'menos'));
-  }
+  if (letra === correcta) { g.stars++; speak('¡Correcto! El grupo ' + letra + ' tiene ' + (g.pregunta === 'mas' ? 'más' : 'menos')); setTimeout(() => celebrate('⚖️ ¡Muy bien! 🌟'), 300); }
+  else { speak('No es ese. El grupo ' + correcta + ' tiene ' + (g.pregunta === 'mas' ? 'más' : 'menos')); }
   renderGames();
 }
-
 // ══════════════════════════════════════════
 // ABRAPALABRA — DATA
 // ══════════════════════════════════════════
-const ABRA_STATE = { section: 'vocales', cuentoIdx: 0 };
-
+const ABRA_STATE = { section: 'vocales', cuentoIdx: 0, storyIdx: 0 };
 const VOCALES_INFO = [
   { letra:'A', color:'#E74C3C', bg:'#FFF0F0', emoji:'✈️', palabra:'avión',    frase:'A de avión'    },
   { letra:'E', color:'#E67E22', bg:'#FFF8F0', emoji:'🐘', palabra:'elefante', frase:'E de elefante' },
@@ -1769,7 +1530,6 @@ const VOCALES_INFO = [
   { letra:'O', color:'#27AE60', bg:'#F0FFF5', emoji:'🐻', palabra:'oso',      frase:'O de oso'      },
   { letra:'U', color:'#1ABC9C', bg:'#F0FFFD', emoji:'🍇', palabra:'uva',      frase:'U de uva'      },
 ];
-
 const SILABAS_IMAGEN = [
   { syl:'MA', img:'👩', word:'MAMÁ',   color:'#ec4899' },
   { syl:'PA', img:'👨', word:'PAPÁ',   color:'#3b82f6' },
@@ -1784,11 +1544,10 @@ const SILABAS_IMAGEN = [
   { syl:'TO', img:'🐢', word:'TORTUGA',color:'#14b8a6' },
   { syl:'VA', img:'🐄', word:'VACA',   color:'#e11d48' },
 ];
-
 const PALABRAS_GLOBALES = [
   { nivel:1, label:'1 sílaba', items:[
     {emoji:'☀️',word:'sol'},{emoji:'🌊',word:'mar'},{emoji:'💡',word:'luz'},
-    {emoji:'🍞',word:'pan'},{emoji:'🌹',word:'flor'},{emoji:'👂',word:'pie'},
+    {emoji:'🍞',word:'pan'},{emoji:'🌹',word:'flor'},{emoji:'🦶',word:'pie'},
   ]},
   { nivel:2, label:'2 sílabas', items:[
     {emoji:'👩',word:'mamá'},{emoji:'👨',word:'papá'},{emoji:'🐱',word:'gato'},
@@ -1800,17 +1559,50 @@ const PALABRAS_GLOBALES = [
     {emoji:'🍌',word:'plátano'},{emoji:'🦋',word:'mariposa'},{emoji:'🌈',word:'arcoíris'},
   ]},
 ];
-
-const CUENTO = [
-  { img:'🐸', texto:'Érase una vez un sapito que se llamaba Sipo.' },
-  { img:'🌿', texto:'Sipo vivía cerca de un río verde y fresco.' },
-  { img:'🌞', texto:'Un día, Sipo salió a buscar el sol.' },
-  { img:'🦋', texto:'En el camino vio una mariposa de colores.' },
-  { img:'🐦', texto:'Y también escuchó cantar a un pajarito.' },
-  { img:'🍂', texto:'Al caer la tarde, Sipo volvió a casa saltando.' },
-  { img:'⭐', texto:'Y durmió soñando con un cielo lleno de estrellas.' },
+// ══════════════════════════════════════════
+// CUENTOS — 3 historias
+// ══════════════════════════════════════════
+const CUENTOS = [
+  {
+    titulo: '🐸 El Sapito Sipo',
+    color: '#6b21a8',
+    pages: [
+      { img:'🐸', texto:'Érase una vez un sapito que se llamaba Sipo.' },
+      { img:'🌿', texto:'Sipo vivía cerca de un río verde y fresco.' },
+      { img:'🌞', texto:'Un día, Sipo salió a buscar el sol.' },
+      { img:'🦋', texto:'En el camino vio una mariposa de colores.' },
+      { img:'🐦', texto:'Y también escuchó cantar a un pajarito.' },
+      { img:'🍂', texto:'Al caer la tarde, Sipo volvió a casa saltando.' },
+      { img:'⭐', texto:'Y durmió soñando con un cielo lleno de estrellas.' },
+    ]
+  },
+  {
+    titulo: '🐱 La Gatita Mía',
+    color: '#0e7490',
+    pages: [
+      { img:'🐱', texto:'Había una vez una gatita muy curiosa llamada Mía.' },
+      { img:'🏠', texto:'Vivía en una casa blanca con jardín lleno de flores.' },
+      { img:'🌸', texto:'A Mía le encantaba oler las flores de colores.' },
+      { img:'🎀', texto:'Tenía un lazo rosado en la cola que todos admiraban.' },
+      { img:'🍼', texto:'Cada noche tomaba su leche bien calentita.' },
+      { img:'🌙', texto:'Luego se enrollaba en su cama suavecita.' },
+      { img:'⭐', texto:'Y soñaba con jugar entre las nubes y las estrellas.' },
+    ]
+  },
+  {
+    titulo: '🦆 El Patito Azul',
+    color: '#0369a1',
+    pages: [
+      { img:'🦆', texto:'Un patito vivía en un lago azul y brillante.' },
+      { img:'🌊', texto:'Nadaba y nadaba desde tempranito en la mañana.' },
+      { img:'🐸', texto:'Su amigo el sapo lo esperaba siempre en la orilla.' },
+      { img:'🌻', texto:'Juntos buscaban semillas entre las flores amarillas.' },
+      { img:'🌈', texto:'Un día vieron un arcoíris enorme en el cielo.' },
+      { img:'🌅', texto:'Al atardecer, el cielo se ponía naranja y rojo.' },
+      { img:'😴', texto:'El patito volvió a casa muy cansado y muy feliz.' },
+    ]
+  },
 ];
-
 // ── renderAbra ─────────────────────────────
 function renderAbra() {
   const sections = [
@@ -1822,245 +1614,157 @@ function renderAbra() {
   const tabs = sections.map(s =>
     `<button class="abra-sub-btn${ABRA_STATE.section===s.id?' abra-active':''}"
       onclick="abraSection('${s.id}')">${s.label}</button>`).join('');
-
   let content = '';
   if (ABRA_STATE.section === 'vocales')  content = renderAbraVocales();
   if (ABRA_STATE.section === 'silabas')  content = renderAbraSilabas();
   if (ABRA_STATE.section === 'palabras') content = renderAbraPalabras();
   if (ABRA_STATE.section === 'cuento')   content = renderAbraCuento();
-
   document.getElementById('panel-abra').innerHTML = `
-    <!-- Header -->
-    <div style="background:linear-gradient(135deg,#1a0533,#6b21a8);border-radius:20px;
-      padding:18px 20px;margin-bottom:14px;text-align:center;
-      box-shadow:0 6px 24px rgba(107,33,168,.35)">
-      <div style="font-family:'Fredoka One',cursive;font-size:1.6rem;color:#fff;line-height:1.2">
-        📖 Abrapalabra
-      </div>
-      <div style="color:rgba(255,255,255,.8);font-size:.85rem;font-weight:800;margin-top:4px">
-        La Magia de Aprender a Leer ✨
-      </div>
+    <div style="background:linear-gradient(135deg,#1a0533,#6b21a8);border-radius:20px;padding:18px 20px;margin-bottom:14px;text-align:center;box-shadow:0 6px 24px rgba(107,33,168,.35)">
+      <div style="font-family:'Fredoka One',cursive;font-size:1.6rem;color:#fff;line-height:1.2">📖 Abrapalabra</div>
+      <div style="color:rgba(255,255,255,.8);font-size:.85rem;font-weight:800;margin-top:4px">La Magia de Aprender a Leer ✨</div>
     </div>
-    <!-- Sub-tabs -->
-    <div style="display:flex;gap:8px;overflow-x:auto;margin-bottom:14px;scrollbar-width:none;padding-bottom:4px">
-      ${tabs}
-    </div>
-    <!-- Content -->
+    <div style="display:flex;gap:8px;overflow-x:auto;margin-bottom:14px;scrollbar-width:none;padding-bottom:4px">${tabs}</div>
     ${content}`;
 }
-
 function abraSection(s) { ABRA_STATE.section = s; renderAbra(); }
-
 // ── Sección 1: Vocales ─────────────────────
 function renderAbraVocales() {
   const cards = VOCALES_INFO.map(v => `
-    <div onclick="speak('${v.frase}')" style="
-      background:${v.bg};border-radius:24px;padding:20px 12px;
-      border:4px solid ${v.color};
-      box-shadow:0 6px 22px ${v.color}33;
-      display:flex;flex-direction:column;align-items:center;gap:10px;
-      cursor:pointer;transition:transform .15s;
-      animation:fadeInDown .5s ease both;
-    ">
-      <div style="font-family:'Fredoka One',cursive;font-size:5rem;color:${v.color};
-        line-height:1;text-shadow:0 4px 12px ${v.color}44">${v.letra}</div>
+    <div onclick="speak('${v.frase}')" style="background:${v.bg};border-radius:24px;padding:20px 12px;border:4px solid ${v.color};box-shadow:0 6px 22px ${v.color}33;display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:transform .15s;animation:fadeInDown .5s ease both;">
+      <div style="font-family:'Fredoka One',cursive;font-size:5rem;color:${v.color};line-height:1;text-shadow:0 4px 12px ${v.color}44">${v.letra}</div>
       <div style="font-size:3rem;line-height:1">${v.emoji}</div>
       <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;color:${v.color}">${v.frase}</div>
-      <div style="background:${v.color};color:#fff;border-radius:50px;
-        padding:5px 14px;font-size:.78rem;font-weight:900">🔊 Escuchar</div>
+      <div style="background:${v.color};color:#fff;border-radius:50px;padding:5px 14px;font-size:.78rem;font-weight:900">🔊 Escuchar</div>
     </div>`).join('');
-
   return `
-    <div style="background:#fff;border-radius:18px;padding:14px;margin-bottom:12px;
-      box-shadow:0 2px 12px rgba(0,0,0,.06)">
-      <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1rem;margin-bottom:10px">
-        🌟 Las 5 Vocales — toca cada una para escucharla
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px">
-        ${cards}
-      </div>
+    <div style="background:#fff;border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+      <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1rem;margin-bottom:10px">🌟 Las 5 Vocales — toca cada una para escucharla</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px">${cards}</div>
     </div>
-    <div style="background:linear-gradient(135deg,#fde68a22,#fbbf2422);border:2px solid #fbbf24;
-      border-radius:16px;padding:14px;text-align:center">
+    <div style="background:linear-gradient(135deg,#fde68a22,#fbbf2422);border:2px solid #fbbf24;border-radius:16px;padding:14px;text-align:center">
       <div style="font-size:1.3rem;margin-bottom:6px">💡 Recuerda</div>
-      <div style="font-weight:800;color:#92400e;font-size:.9rem">
-        Las vocales son: <span style="font-family:'Fredoka One',cursive;font-size:1.2rem;
-        letter-spacing:4px;color:#d97706"> A · E · I · O · U</span>
-      </div>
-      <div style="font-size:.82rem;color:#a16207;margin-top:6px;font-weight:700">
-        Todas las palabras tienen al menos una vocal ✨
-      </div>
+      <div style="font-weight:800;color:#92400e;font-size:.9rem">Las vocales son: <span style="font-family:'Fredoka One',cursive;font-size:1.2rem;letter-spacing:4px;color:#d97706"> A · E · I · O · U</span></div>
+      <div style="font-size:.82rem;color:#a16207;margin-top:6px;font-weight:700">Todas las palabras tienen al menos una vocal ✨</div>
     </div>`;
 }
-
 // ── Sección 2: Sílabas con imagen ──────────
 function renderAbraSilabas() {
   const cards = SILABAS_IMAGEN.map(s => `
-    <div onclick="speak('${s.syl.toLowerCase()}')" style="
-      background:#fff;border-radius:20px;padding:14px 8px;
-      border:3px solid ${s.color}55;
-      box-shadow:0 4px 16px ${s.color}22;
-      display:flex;flex-direction:column;align-items:center;gap:8px;
-      cursor:pointer;transition:transform .15s;
-    ">
+    <div onclick="speak('${s.syl.toLowerCase()}')" style="background:#fff;border-radius:20px;padding:14px 8px;border:3px solid ${s.color}55;box-shadow:0 4px 16px ${s.color}22;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;transition:transform .15s;">
       <div style="font-size:2.4rem;line-height:1">${s.img}</div>
       <div style="font-family:'Fredoka One',cursive;font-size:2rem;color:${s.color};line-height:1">${s.syl}</div>
       <div style="font-size:.7rem;font-weight:900;color:#888;letter-spacing:1px">${s.word}</div>
     </div>`).join('');
-
   return `
-    <div style="background:#fff;border-radius:18px;padding:14px;margin-bottom:12px;
-      box-shadow:0 2px 12px rgba(0,0,0,.06)">
-      <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1rem;margin-bottom:10px">
-        🔡 Sílabas con imagen — toca para escuchar
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:10px">
-        ${cards}
-      </div>
+    <div style="background:#fff;border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+      <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1rem;margin-bottom:10px">🔡 Sílabas con imagen — toca para escuchar</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:10px">${cards}</div>
     </div>
     <div style="background:#f0fdf4;border:2px solid #22c55e;border-radius:16px;padding:14px">
-      <div style="font-family:'Fredoka One',cursive;color:#15803d;font-size:.95rem;margin-bottom:6px">
-        🌱 ¿Cómo se forman las sílabas?
-      </div>
+      <div style="font-family:'Fredoka One',cursive;color:#15803d;font-size:.95rem;margin-bottom:6px">🌱 ¿Cómo se forman las sílabas?</div>
       <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-        ${['ma','pa','sa','la','ta'].map(s=>`
-          <div style="background:#fff;border-radius:14px;padding:10px 16px;
-            font-family:'Fredoka One',cursive;font-size:1.4rem;color:#15803d;
-            box-shadow:0 3px 10px rgba(0,0,0,.08);cursor:pointer"
-            onclick="speak('${s}')">${s}</div>`).join('')}
+        ${['ma','pa','sa','la','ta'].map(s=>`<div style="background:#fff;border-radius:14px;padding:10px 16px;font-family:'Fredoka One',cursive;font-size:1.4rem;color:#15803d;box-shadow:0 3px 10px rgba(0,0,0,.08);cursor:pointer" onclick="speak('${s}')">${s}</div>`).join('')}
       </div>
-      <div style="font-size:.78rem;color:#16a34a;font-weight:800;text-align:center;margin-top:8px">
-        consonante + vocal = sílaba 🎉
-      </div>
+      <div style="font-size:.78rem;color:#16a34a;font-weight:800;text-align:center;margin-top:8px">consonante + vocal = sílaba 🎉</div>
     </div>`;
 }
-
 // ── Sección 3: Palabras Globales ───────────
 function renderAbraPalabras() {
   const niveles = PALABRAS_GLOBALES.map(nivel => {
     const items = nivel.items.map(item => `
-      <div onclick="speak('${item.word}')" style="
-        background:#fff;border-radius:18px;padding:12px 8px;
-        box-shadow:0 3px 12px rgba(0,0,0,.07);
-        display:flex;flex-direction:column;align-items:center;gap:6px;
-        cursor:pointer;border:2px solid transparent;transition:all .15s;
-      ">
+      <div onclick="speak('${item.word}')" style="background:#fff;border-radius:18px;padding:12px 8px;box-shadow:0 3px 12px rgba(0,0,0,.07);display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;border:2px solid transparent;transition:all .15s;">
         <div style="font-size:2rem;line-height:1">${item.emoji}</div>
-        <div style="font-family:'Fredoka One',cursive;font-size:.9rem;
-          color:#444;text-align:center">${item.word}</div>
+        <div style="font-family:'Fredoka One',cursive;font-size:.9rem;color:#444;text-align:center">${item.word}</div>
       </div>`).join('');
-
     const colors = { 1:'#10b981', 2:'#3b82f6', 3:'#8b5cf6' };
     const clr = colors[nivel.nivel];
     return `
       <div style="margin-bottom:14px">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-          <div style="background:${clr};color:#fff;border-radius:10px;
-            padding:4px 12px;font-family:'Fredoka One',cursive;font-size:.85rem">
-            ${nivel.label}
-          </div>
+          <div style="background:${clr};color:#fff;border-radius:10px;padding:4px 12px;font-family:'Fredoka One',cursive;font-size:.85rem">${nivel.label}</div>
           <div style="flex:1;height:2px;background:${clr}33;border-radius:2px"></div>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px">
-          ${items}
-        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px">${items}</div>
       </div>`;
   }).join('');
-
   return `
-    <div style="background:#fff;border-radius:18px;padding:14px;
-      box-shadow:0 2px 12px rgba(0,0,0,.06)">
-      <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1rem;margin-bottom:12px">
-        📝 Mis Primeras Palabras — toca para escuchar
-      </div>
+    <div style="background:#fff;border-radius:18px;padding:14px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+      <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1rem;margin-bottom:12px">📝 Mis Primeras Palabras — toca para escuchar</div>
       ${niveles}
     </div>`;
 }
-
-// ── Sección 4: Mi Cuento ───────────────────
+// ── Sección 4: Mi Cuento (3 historias) ────
 function renderAbraCuento() {
-  const page = CUENTO[ABRA_STATE.cuentoIdx];
-  const isLast = ABRA_STATE.cuentoIdx === CUENTO.length - 1;
+  const story = CUENTOS[ABRA_STATE.storyIdx];
+  const page  = story.pages[ABRA_STATE.cuentoIdx];
+  const isLast  = ABRA_STATE.cuentoIdx === story.pages.length - 1;
   const isFirst = ABRA_STATE.cuentoIdx === 0;
-
-  const dots = CUENTO.map((_, i) =>
-    `<div style="width:${ABRA_STATE.cuentoIdx===i?20:8}px;height:8px;border-radius:4px;
-      background:${ABRA_STATE.cuentoIdx===i?'#7c3aed':'#d4c5ff'};
-      transition:all .3s"></div>`).join('');
-
+ 
+  // Selector de historia
+  const storyBtns = CUENTOS.map((c, i) =>
+    `<button class="story-btn${ABRA_STATE.storyIdx===i?' selected':''}"
+      style="${ABRA_STATE.storyIdx===i?`background:linear-gradient(135deg,${c.color},${c.color}cc)`:''}border-color:${c.color}55"
+      onclick="abraSelectStory(${i})">${c.titulo}</button>`
+  ).join('');
+ 
+  // Dots de páginas
+  const dots = story.pages.map((_, i) =>
+    `<div style="width:${ABRA_STATE.cuentoIdx===i?20:8}px;height:8px;border-radius:4px;background:${ABRA_STATE.cuentoIdx===i?story.color:'#d4c5ff'};transition:all .3s"></div>`
+  ).join('');
+ 
+  const safeText = page.texto.replace(/'/g, "&#39;");
+ 
   return `
-    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding-bottom:20px">
-      <!-- Book title -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:20px">
+      <!-- Selector de cuentos -->
+      <div style="width:100%;background:#fff;border-radius:16px;padding:12px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+        <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:.88rem;margin-bottom:8px;text-align:center">📚 Elige tu cuento</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">${storyBtns}</div>
+      </div>
+      <!-- Título del cuento -->
       <div style="text-align:center;padding:0 8px">
-        <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:#7c3aed">
-          🐸 El Sapito Sipo
-        </div>
-        <div style="font-size:.8rem;color:#a78bfa;font-weight:800">
-          Página ${ABRA_STATE.cuentoIdx+1} de ${CUENTO.length}
-        </div>
+        <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:${story.color}">${story.titulo}</div>
+        <div style="font-size:.8rem;color:#a78bfa;font-weight:800">Página ${ABRA_STATE.cuentoIdx+1} de ${story.pages.length}</div>
       </div>
-
-      <!-- Story card -->
-      <div onclick="speak('${page.texto.replace(/'/g,"&#39;")}')"
-        style="background:linear-gradient(135deg,#fdf4ff,#f0e8ff);
-        border:3px solid #c084fc;border-radius:28px;
-        padding:32px 24px;text-align:center;width:100%;max-width:380px;
-        box-shadow:0 8px 32px rgba(192,132,252,.3);cursor:pointer;
-        animation:celebPop .4s ease both">
+      <!-- Tarjeta del cuento -->
+      <div onclick="speak('${safeText}')"
+        style="background:linear-gradient(135deg,#fdf4ff,#f0e8ff);border:3px solid ${story.color}88;border-radius:28px;padding:32px 24px;text-align:center;width:100%;max-width:380px;box-shadow:0 8px 32px ${story.color}22;cursor:pointer;animation:celebPop .4s ease both">
         <div style="font-size:6rem;line-height:1;margin-bottom:16px">${page.img}</div>
-        <div style="font-family:'Fredoka One',cursive;font-size:1.25rem;color:#6b21a8;
-          line-height:1.5">${page.texto}</div>
-        <div style="margin-top:14px;background:#a855f7;color:#fff;
-          border-radius:50px;padding:8px 20px;font-weight:900;font-size:.85rem;display:inline-block">
-          🔊 Toca para escuchar
-        </div>
+        <div style="font-family:'Fredoka One',cursive;font-size:1.25rem;color:${story.color};line-height:1.5">${page.texto}</div>
+        <div style="margin-top:14px;background:${story.color};color:#fff;border-radius:50px;padding:8px 20px;font-weight:900;font-size:.85rem;display:inline-block">🔊 Toca para escuchar</div>
       </div>
-
       <!-- Dots -->
       <div style="display:flex;gap:6px;align-items:center">${dots}</div>
-
       <!-- Nav buttons -->
       <div style="display:flex;gap:12px">
-        <button onclick="cuentoPrev()"
-          ${isFirst?'disabled':''}
-          style="background:${isFirst?'#e5e7eb':'#f3f0ff'};color:${isFirst?'#aaa':'#7c3aed'};
-          border-radius:14px;padding:12px 22px;font-weight:900;font-size:1rem;
-          box-shadow:${isFirst?'none':'0 3px 12px rgba(124,58,237,.2)'}">
-          ← Anterior
-        </button>
-        <button onclick="cuentoNext()"
-          ${isLast?'disabled':''}
-          style="background:${isLast?'#e5e7eb':'linear-gradient(135deg,#7c3aed,#a855f7)'};
-          color:${isLast?'#aaa':'#fff'};
-          border-radius:14px;padding:12px 22px;font-weight:900;font-size:1rem;
-          box-shadow:${isLast?'none':'0 4px 16px rgba(124,58,237,.4)'}">
-          Siguiente →
-        </button>
+        <button onclick="cuentoPrev()" ${isFirst?'disabled':''}
+          style="background:${isFirst?'#e5e7eb':'#f3f0ff'};color:${isFirst?'#aaa':story.color};border-radius:14px;padding:12px 22px;font-weight:900;font-size:1rem;box-shadow:${isFirst?'none':'0 3px 12px rgba(124,58,237,.2)'}">← Anterior</button>
+        <button onclick="cuentoNext()" ${isLast?'disabled':''}
+          style="background:${isLast?'#e5e7eb':`linear-gradient(135deg,${story.color},${story.color}cc)`};color:${isLast?'#aaa':'#fff'};border-radius:14px;padding:12px 22px;font-weight:900;font-size:1rem;box-shadow:${isLast?'none':'0 4px 16px rgba(124,58,237,.4)'}">Siguiente →</button>
       </div>
-
-      ${isLast?`
+      ${isLast ? `
         <div style="text-align:center">
           <div style="font-size:2rem">🎉⭐🎉</div>
-          <div style="font-family:'Fredoka One',cursive;color:#7c3aed;font-size:1.1rem">
-            ¡Terminaste el cuento!
-          </div>
+          <div style="font-family:'Fredoka One',cursive;color:${story.color};font-size:1.1rem">¡Terminaste el cuento!</div>
           <button onclick="ABRA_STATE.cuentoIdx=0;renderAbra()"
-            style="background:linear-gradient(135deg,#10b981,#34d399);color:#fff;
-            border-radius:14px;padding:10px 24px;font-weight:900;font-size:.9rem;
-            margin-top:10px;box-shadow:0 4px 14px rgba(16,185,129,.4)">
-            🔄 Leer de nuevo
-          </button>
-        </div>`:''
-      }
+            style="background:linear-gradient(135deg,#10b981,#34d399);color:#fff;border-radius:14px;padding:10px 24px;font-weight:900;font-size:.9rem;margin-top:10px;box-shadow:0 4px 14px rgba(16,185,129,.4)">🔄 Leer de nuevo</button>
+        </div>` : ''}
     </div>`;
 }
-
+function abraSelectStory(i) {
+  ABRA_STATE.storyIdx = i;
+  ABRA_STATE.cuentoIdx = 0;
+  speak(CUENTOS[i].titulo.replace(/[^\w\s]/gi, ''));
+  renderAbra();
+}
 function cuentoNext() {
-  if (ABRA_STATE.cuentoIdx < CUENTO.length - 1) {
+  const story = CUENTOS[ABRA_STATE.storyIdx];
+  if (ABRA_STATE.cuentoIdx < story.pages.length - 1) {
     ABRA_STATE.cuentoIdx++;
-    speak(CUENTO[ABRA_STATE.cuentoIdx].texto);
+    speak(story.pages[ABRA_STATE.cuentoIdx].texto);
     renderAbra();
-    if (ABRA_STATE.cuentoIdx === CUENTO.length - 1) {
+    if (ABRA_STATE.cuentoIdx === story.pages.length - 1) {
       setTimeout(() => celebrate('📖 ¡Terminaste el cuento! 🌟'), 400);
     }
   }
@@ -2068,7 +1772,6 @@ function cuentoNext() {
 function cuentoPrev() {
   if (ABRA_STATE.cuentoIdx > 0) { ABRA_STATE.cuentoIdx--; renderAbra(); }
 }
-
 // ══════════════════════════════════════════
 // HERO FLOATING EMOJIS
 // ══════════════════════════════════════════
@@ -2080,11 +1783,9 @@ function initHeroEmojis() {
     const top  = 5 + Math.random() * 85;
     const delay = Math.random() * 3;
     const dur   = 2.5 + Math.random() * 2;
-    return `<span class="hero-emoji" style="left:${left}%;top:${top}%;
-      animation-delay:${delay}s;animation-duration:${dur}s">${e}</span>`;
+    return `<span class="hero-emoji" style="left:${left}%;top:${top}%;animation-delay:${delay}s;animation-duration:${dur}s">${e}</span>`;
   }).join('');
 }
-
 // ══════════════════════════════════════════
 // BOOT
 // ══════════════════════════════════════════
@@ -2095,40 +1796,28 @@ initContar();
 initSumar();
 initMasoMenos();
 renderPicto();
-
 // ══════════════════════════════════════════
-// MARCADOR DE VISITAS (solo para el dueño)
+// MARCADOR DE VISITAS
 // ══════════════════════════════════════════
 (function() {
-  const KEY_N  = 'aac_visitas';
-  const KEY_1  = 'aac_primera';
-  const KEY_U  = 'aac_ultima';
-  const KEY_TS = 'aac_sesion';
-
-  // — Registrar visita (una por sesión) —
+  const KEY_N='aac_visitas', KEY_1='aac_primera', KEY_U='aac_ultima', KEY_TS='aac_sesion';
   const sesionActual = sessionStorage.getItem(KEY_TS);
   if (!sesionActual) {
     sessionStorage.setItem(KEY_TS, '1');
-    const total  = parseInt(localStorage.getItem(KEY_N) || '0') + 1;
-    const hoy    = new Date().toLocaleDateString('es-ES', {day:'2-digit',month:'2-digit',year:'numeric'});
-    const hora   = new Date().toLocaleTimeString('es-ES', {hour:'2-digit',minute:'2-digit'});
+    const total = parseInt(localStorage.getItem(KEY_N) || '0') + 1;
+    const hoy   = new Date().toLocaleDateString('es-ES', {day:'2-digit',month:'2-digit',year:'numeric'});
+    const hora  = new Date().toLocaleTimeString('es-ES', {hour:'2-digit',minute:'2-digit'});
     if (!localStorage.getItem(KEY_1)) localStorage.setItem(KEY_1, hoy);
     localStorage.setItem(KEY_N, total);
     localStorage.setItem(KEY_U, hoy + ' ' + hora);
   }
-
-  // — Mostrar panel —
-  let panelVisible = false;
-  let hideTimer = null;
-
+  let panelVisible = false, hideTimer = null;
   window.showVisitPanel = function() {
     if (panelVisible) { closeVisitPanel(); return; }
     panelVisible = true;
-
-    const total   = localStorage.getItem(KEY_N) || '1';
+    const total = localStorage.getItem(KEY_N) || '1';
     const primera = localStorage.getItem(KEY_1) || '—';
     const ultima  = localStorage.getItem(KEY_U) || '—';
-
     const el = document.createElement('div');
     el.id = 'visit-panel';
     el.innerHTML = `
@@ -2136,24 +1825,13 @@ renderPicto();
       <div class="vp-title">👁️ MARCADOR DE VISITAS</div>
       <div class="vp-big">${total}</div>
       <div style="text-align:center;font-size:.72rem;opacity:.6;margin-bottom:12px;font-family:'Nunito',sans-serif">visitas totales</div>
-      <div class="vp-row">
-        <span class="vp-label">Primera visita</span>
-        <span class="vp-val" style="font-size:.85rem">${primera}</span>
-      </div>
-      <div class="vp-row">
-        <span class="vp-label">Última visita</span>
-        <span class="vp-val" style="font-size:.85rem">${ultima}</span>
-      </div>
-      <div style="margin-top:10px;font-size:.65rem;opacity:.4;text-align:center;font-family:'Nunito',sans-serif">
-        Ctrl+Shift+V para mostrar/ocultar
-      </div>`;
+      <div class="vp-row"><span class="vp-label">Primera visita</span><span class="vp-val" style="font-size:.85rem">${primera}</span></div>
+      <div class="vp-row"><span class="vp-label">Última visita</span><span class="vp-val" style="font-size:.85rem">${ultima}</span></div>
+      <div style="margin-top:10px;font-size:.65rem;opacity:.4;text-align:center;font-family:'Nunito',sans-serif">Ctrl+Shift+V para mostrar/ocultar</div>`;
     document.body.appendChild(el);
-
-    // auto-cierre a los 18 segundos
     clearTimeout(hideTimer);
     hideTimer = setTimeout(closeVisitPanel, 18000);
   };
-
   window.closeVisitPanel = function() {
     const el = document.getElementById('visit-panel');
     if (!el) return;
@@ -2161,17 +1839,9 @@ renderPicto();
     setTimeout(() => { el.remove(); panelVisible = false; }, 300);
     clearTimeout(hideTimer);
   };
-
-  // — Atajos —
-  // Escritorio: Ctrl + Shift + V
   document.addEventListener('keydown', e => {
-    if (e.ctrlKey && e.shiftKey && e.key === 'V') {
-      e.preventDefault();
-      showVisitPanel();
-    }
+    if (e.ctrlKey && e.shiftKey && e.key === 'V') { e.preventDefault(); showVisitPanel(); }
   });
-
-  // Móvil: 5 toques rápidos en la barra de progreso
   let tapCount = 0, tapTimer = null;
   document.getElementById('progress-bar').addEventListener('click', () => {
     tapCount++;
@@ -2183,3 +1853,4 @@ renderPicto();
 </script>
 </body>
 </html>
+ 
